@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesion</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Iniciar sesion</h2>
+  <form action="login.php" method="POST">
+    <label for="username">Usuario:</label>
+    <input type="text" id="username" name="username" required><br>
+    
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required><br>
+    
+    <label for="role">Rol:</label>
+    <select id="role" name="role" required>
+      <option value="administrador">Administrador</option>
+      <option value="empleado">Empleado</option>
+    </select><br>
+    
+    <input type="submit" value="Iniciar sesion">
+  </form>
+</body>
+</html>
